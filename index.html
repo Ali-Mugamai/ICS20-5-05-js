@@ -64,34 +64,48 @@
               </th>
             </tr>
           </table>
-          <!-- Simple Textfield -->
+          <!-- Numeric Textfield -->
           <form action="#">
-            <p>hours worked</p>
+            <p>angle A</p>
             <div class="mdl-textfield mdl-js-textfield">
               <input
                 class="mdl-textfield__input"
                 type="text"
                 pattern="-?[0-9]*(\.[0-9]+)?"
-                id="hours_worked"
+                id="lengthA"
               />
-              <label class="mdl-textfield__label" for="hours_worked"
-                >hours ...</label
+              <label class="mdl-textfield__label" for="lengthA"
+                >length ...</label
               >
               <span class="mdl-textfield__error">Input is not a number!</span>
             </div>
           </form>
-          <!-- Numeric Textfield -->
           <form action="#">
-            <p>hourly rate</p>
+            <p>side B</p>
             <div class="mdl-textfield mdl-js-textfield">
               <input
                 class="mdl-textfield__input"
                 type="text"
                 pattern="-?[0-9]*(\.[0-9]+)?"
-                id="hourly_rate"
+                id="lengthB"
               />
-              <label class="mdl-textfield__label" for="hourly_rate"
-                >hourly rate ...</label
+              <label class="mdl-textfield__label" for="lengthB"
+                >length ...</label
+              >
+              <span class="mdl-textfield__error">Input is not a number!</span>
+            </div>
+          </form>
+          <form action="#">
+            <p>side C</p>
+            <div class="mdl-textfield mdl-js-textfield">
+              <input
+                class="mdl-textfield__input"
+                type="text"
+                pattern="-?[0-9]*(\.[0-9]+)?"
+                id="lengthC"
+              />
+              <label class="mdl-textfield__label" for="lengthC"
+                >length ...</label
               >
               <span class="mdl-textfield__error">Input is not a number!</span>
             </div>
@@ -106,8 +120,6 @@
           </button>
           <br />
           <div id="answers">
-            <div id="pay"></div>
-            <div id="governmentstake"></div>
           </div>
         </main>
       </div>

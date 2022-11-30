@@ -19,16 +19,16 @@ if (navigator.serviceWorker) {
 
 function calculate() {
   // input
-  const hours = parseInt(document.getElementById("hours_worked").value)
-  const rate = parseInt(document.getElementById("hourly_rate").value)
+  const lengthA = parseFloat(document.getElementById("lengthA").value)
+  const lengthB = parseFloat(document.getElementById("lengthB").value)
+  const lengthC = parseFloat(document.getElementById("lengthC").value)
+  cpms
   // process
-  const pay = hours * rate * 0.82
-  const taxes = hours * rate * 0.18
+  const angleA = Math.acos((lengthB**2 + lengthC**2 - lengthA**2) / (2 * lengthB * lengthC)) * (180/Math.PI)
+  const angleB = Math.acos((lengthC**2 + lengthA**2 - lengthB**2) / (2 * lengthC * lengthA)) * (180/Math.PI)
+  const angleC = Math.acos((lengthA**2 + lengthB**2 - lengthC**2) / (2 * lengthA * lengthB)) * (180/Math.PI)
+
+  const sumOfAngles = Number((angleA).toFixed(2)) + Number((angleB).toFixed(2)) + Number((angleC).toFixed(2)) 
   // output
-  document.getElementById("pay").innerHTML = `Your pay will be: $ ${pay.toFixed(
-    2
-  )}`
-  document.getElementById(
-    "governmentstake"
-  ).innerHTML = `Your pay will be: $ ${taxes.toFixed(2)}`
+  document.getElementById("pay").innerHTML = "Your pay will be:"
 }

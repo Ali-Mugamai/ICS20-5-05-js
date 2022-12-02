@@ -17,7 +17,7 @@ if (navigator.serviceWorker) {
  * This function calculates area and perimeter of rectangle.
  */
 
-function calculate() {
+function myButtonClicked() {
   // input
   const lengthA = parseFloat(document.getElementById("length_A").value)
   const lengthB = parseFloat(document.getElementById("length_B").value)

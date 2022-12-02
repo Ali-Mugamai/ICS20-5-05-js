@@ -19,9 +19,9 @@ if (navigator.serviceWorker) {
 
 function calculate() {
   // input
-  const lengthA = parseFloat(document.getElementById("lengthA").value)
-  const lengthB = parseFloat(document.getElementById("lengthB").value)
-  const lengthC = parseFloat(document.getElementById("lengthC").value)
+  const lengthA = parseFloat(document.getElementById("length_A").value)
+  const lengthB = parseFloat(document.getElementById("length_B").value)
+  const lengthC = parseFloat(document.getElementById("length_C").value)
   cpms
   // process
   const angleA =

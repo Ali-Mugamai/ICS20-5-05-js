@@ -45,5 +45,6 @@ function calculate() {
     Number(angleB.toFixed(2)) +
     Number(angleC.toFixed(2))
   // output
-  document.getElementById("pay").innerHTML = "<p> Your pay will be:" + sumOfAngles + "</p>"
+  document.getElementById("pay").innerHTML =
+    "<p> Your pay will be:" + sumOfAngles + "</p>"
 }

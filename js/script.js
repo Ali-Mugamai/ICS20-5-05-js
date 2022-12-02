@@ -45,15 +45,18 @@ function calculate() {
     Number(angleB.toFixed(2)) +
     Number(angleC.toFixed(2))
 
-
-    if (sumOfAngles == 180 && angleA == angleB) {
-      document.getElementById("answers").innerHTML =
-        "<p>isosceles triangle</p>"
-    } else if (sumOfAngles == 180 && angleA == angleB && angleB == angleC) { 
-      document.getElementById("answers").innerHTML = "<p>equilateral triangle</p>"
-    } else if (sumOfAngles == 180 && angleA != angleB && angleC != angleB && angleA != angleC) { 
-      document.getElementById("answers").innerHTML = "<p>scalene triangle</p>"
-    } else {
-      document.getElementById("answers").innerHTML = "<p>not a triangle</p>"
-    }
+  if (sumOfAngles == 180 && angleA == angleB) {
+    document.getElementById("answers").innerHTML = "<p>isosceles triangle</p>"
+  } else if (sumOfAngles == 180 && angleA == angleB && angleB == angleC) {
+    document.getElementById("answers").innerHTML = "<p>equilateral triangle</p>"
+  } else if (
+    sumOfAngles == 180 &&
+    angleA != angleB &&
+    angleC != angleB &&
+    angleA != angleC
+  ) {
+    document.getElementById("answers").innerHTML = "<p>scalene triangle</p>"
+  } else {
+    document.getElementById("answers").innerHTML = "<p>not a triangle</p>"
+  }
 }

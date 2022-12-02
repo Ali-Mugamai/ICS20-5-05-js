@@ -44,7 +44,16 @@ function calculate() {
     Number(angleA.toFixed(2)) +
     Number(angleB.toFixed(2)) +
     Number(angleC.toFixed(2))
-  // output
-  document.getElementById("pay").innerHTML =
-    "<p> Your pay will be:" + sumOfAngles + "</p>"
+
+
+    if (sumOfAngles == 180 && angleA == angleB) {
+      document.getElementById("answers").innerHTML =
+        "<p>isosceles triangle</p>"
+    } else if (sumOfAngles == 180 && angleA == angleB && angleB == angleC) { 
+      document.getElementById("answers").innerHTML = "<p>equilateral triangle</p>"
+    } else if (sumOfAngles == 180 && angleA != angleB && angleC != angleB && angleA != angleC) { 
+      document.getElementById("answers").innerHTML = "<p>scalene triangle</p>"
+    } else {
+      document.getElementById("answers").innerHTML = "<p>not a triangle</p>"
+    }
 }

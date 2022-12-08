@@ -22,7 +22,6 @@ function myButtonClicked() {
   const lengthA = parseFloat(document.getElementById("length_A").value)
   const lengthB = parseFloat(document.getElementById("length_B").value)
   const lengthC = parseFloat(document.getElementById("length_C").value)
-  cpms
   // process
   const angleA =
     Math.acos(

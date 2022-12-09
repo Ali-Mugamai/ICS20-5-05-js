@@ -48,7 +48,6 @@ function myButtonClicked() {
     document.getElementById("answers").innerHTML = "<p>equilateral triangle</p>"
   } else if (sumOfAngles == 180 && angleA == angleB) {
     document.getElementById("answers").innerHTML = "<p>isosceles triangle</p>"
-
   } else if (
     sumOfAngles == 180 &&
     angleA != angleB &&

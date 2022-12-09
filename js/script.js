@@ -44,10 +44,11 @@ function myButtonClicked() {
     Number(angleB.toFixed(2)) +
     Number(angleC.toFixed(2))
 
-  if (sumOfAngles == 180 && angleA == angleB) {
-    document.getElementById("answers").innerHTML = "<p>isosceles triangle</p>"
-  } else if (sumOfAngles == 180 && angleA == angleB && angleB == angleC) {
+  if (sumOfAngles == 180 && angleA == angleB && angleB == angleC) {
     document.getElementById("answers").innerHTML = "<p>equilateral triangle</p>"
+  } else if (sumOfAngles == 180 && angleA == angleB) {
+    document.getElementById("answers").innerHTML = "<p>isosceles triangle</p>"
+
   } else if (
     sumOfAngles == 180 &&
     angleA != angleB &&

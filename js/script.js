@@ -46,15 +46,14 @@ function myButtonClicked() {
 
   if (sumOfAngles == 180) {
     if (angleA == angleB && angleB == angleC) {
-      document.getElementById("answers").innerHTML = "<p>equilateral triangle</p>"
-    }
-    else if (angleA == angleB) {
+      document.getElementById("answers").innerHTML =
+        "<p>equilateral triangle</p>"
+    } else if (angleA == angleB) {
       document.getElementById("answers").innerHTML = "<p>isosceles triangle</p>"
     } else {
       document.getElementById("answers").innerHTML = "<p>scalene triangle</p>"
     }
-  }else {
+  } else {
     document.getElementById("answers").innerHTML = "<p>not a triangle</p>"
-    }
-  
+  }
 }
